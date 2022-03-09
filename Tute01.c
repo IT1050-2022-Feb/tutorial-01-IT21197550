@@ -4,19 +4,20 @@
 
 #include <stdio.h>
 
-int main() {
-   
-   int mark, n, sum;
+int main() 
+{
+   int mark, n , sum;
    float avg;
    
-   while(n > 2)
+   while(n < 2)
    {
-      printf("Enter mark %d, n);
+      printf("Enter mark %d: ", n + 1);
       scanf("%d", &mark);
              
      sum += mark;
+     n += 1;
    }
-   avg = sum / 2;
+   avg = sum / 2.0;
    printf("Average mark of the two subjects are: %f", avg);
   return 0;
 }
